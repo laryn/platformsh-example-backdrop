@@ -17,7 +17,15 @@ ini_set('session.cookie_lifetime', 2000000);
 
 $settings['backdrop_drupal_compatibility'] = TRUE;
 $settings['update_free_access'] = FALSE;
+
+// The hash_salt should be a unique random value for each application.
+// If left unset, the settings.platformsh.php file will attempt to provide one.
+// You can also provide a specific value here if you prefer and it will be used
+// instead. In most cases it's best to leave this blank on Platform.sh. You
+// can configure a separate hash_salt in your settings.local.php file for
+// local development.
 $settings['hash_salt'] = '';
+
 $settings['404_fast_paths_exclude'] = '/\/(?:styles)|(?:system\/files)\//';
 $settings['404_fast_paths'] = '/\.(?:txt|png|gif|jpe?g|css|js|ico|swf|flv|cgi|bat|pl|dll|exe|asp)$/i';
 $settings['404_fast_html'] = '<!DOCTYPE html><html><head><title>404 Not Found</title></head><body><h1>Not Found</h1><p>The requested URL "@path" was not found on this server.</p></body></html>';
