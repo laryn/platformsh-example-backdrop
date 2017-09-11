@@ -2,7 +2,7 @@
 name: my-backdrop-app
 recipe: backdrop
 config:
-  webroot: .
+  webroot: web
   php: '7.0'
 
 services:

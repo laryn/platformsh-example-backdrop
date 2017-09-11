@@ -1,9 +1,1 @@
-# Ignore configuration files that may contain sensitive information.
-settings.local.php
-sites/*/settings*.php
-
-# Ignore paths that contain user-generated content.
-/files
-/private
-sites/*/files
-sites/*/private
+node_modules
