@@ -5,8 +5,8 @@
  * Main Backdrop CMS configuration file.
  */
 
-$config_directories['active'] = '../config/active';
-$config_directories['staging'] = '../config/staging';
+$config_directories['active'] = './files/config/active';
+$config_directories['staging'] = './files/config/staging';
 
 ini_set('session.gc_probability', 1);
 ini_set('session.gc_divisor', 100);
