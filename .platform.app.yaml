@@ -1,7 +1,7 @@
 # .platform.app.yaml
 
 # The name of this application, which must be unique within a project.
-name: 'my-backdrop-app'
+name: 'app'
 
 # The type key specifies the language and version for your application.
 type: 'php:7.0'
@@ -49,7 +49,7 @@ web:
         # Allow uploaded files to be served, but do not run scripts.
         # Missing files get mapped to the front controller above.
         '/files':
-            root: '/files'
+            root: 'files'
             scripts: false
             allow: true
             #passthru: '/app.php'
