@@ -18,6 +18,11 @@ build:
 relationships:
     database: 'database:mysql'
 
+# The build-time dependencies of the app.
+dependencies:
+    php:
+        "drush/drush": "^8.0"
+
 # The hooks that will be triggered when the package is deployed.
 # hooks:
 #     # Build hooks can modify the application files on disk but not access any services like databases.
