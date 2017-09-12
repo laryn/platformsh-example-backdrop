@@ -9,7 +9,7 @@ type: 'php:7.0'
 # On PHP, there are multiple build flavors available. Pretty much everyone
 # except Drupal 7 and Backdrop users will want the composer flavor.
 build:
-    flavor: none
+    flavor: drupal
 
 # The relationships of the application with services or other applications.
 # The left-hand side is the name of the relationship as it will be exposed
@@ -19,10 +19,10 @@ relationships:
     database: 'database:mysql'
 
 # The hooks that will be triggered when the package is deployed.
-# hooks:
-#     # Build hooks can modify the application files on disk but not access any services like databases.
-#     build: |
-#       rm web/app_dev.php
+hooks:
+    # Build hooks can modify the application files on disk but not access any services like databases.
+    build: |
+      git clone https://github.com/backdrop-contrib/drush.git <WEHRE/TO/PUT/drush-extensions>
 #     # Deploy hooks can access services but the file system is now read-only.
 #     deploy: |
 #       app/console --env=prod cache:clear
@@ -35,7 +35,7 @@ disk: 2048
 # The keys are directory paths relative to the application root. The values are
 # strings such as 'shared:files/NAME' where NAME is just a unique name for the mount.
 mounts:
-    '/web/files': 'shared:files/web-files'
+    '/files': 'shared:files/web-files'
     '/config/active': 'shared:files/config/active'
     '/config/staging': 'shared:files/config/staging'
 
@@ -44,7 +44,7 @@ web:
     locations:
         '/':
             # The public directory of the application relative to its root.
-            root: 'web'
+            root: '/web'
             # The front-controller script which determines where to send
             # non-static requests.
             passthru: '/index.php'
