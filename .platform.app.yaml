@@ -24,14 +24,15 @@ dependencies:
         "drush/drush": "^8.0"
 
 # The hooks that will be triggered when the package is deployed.
-# hooks:
-#     # Build hooks can modify the application files on disk but not access any services like databases.
-#     build: |
-#       rm web/app_dev.php
-#     # Deploy hooks can access services but the file system is now read-only.
-#     deploy: |
-#       app/console --env=prod cache:clear
-
+hooks:
+    # Build hooks can modify the application files on disk but not access any services like databases.
+    build: |
+        set -e
+        # Install Drush integration for Backdrop
+        mkdir -p .drush/commands
+        cd .drush/commands
+        wget https://github.com/backdrop-contrib/drush/releases/latest
+        unzip master.zip -d backdrop
 
 # The size of the persistent disk of the application (in MB).
 disk: 2048
