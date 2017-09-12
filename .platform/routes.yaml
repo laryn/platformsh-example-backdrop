@@ -1,6 +1,6 @@
 "https://{default}/":
     type: upstream
-    upstream: "my-backdrop-app:http"
+    upstream: "app:http"
 
 "https://www.{default}/":
     type: redirect
