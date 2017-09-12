@@ -37,7 +37,7 @@ disk: 2048
 mounts:
     '/files': 'shared:files/web-files'
     '/config/active': 'shared:files/config/active'
-    '/config/active': 'shared:files/config/staging'
+    '/config/staging': 'shared:files/config/staging'
 
 # The configuration of the application when it is exposed to the web.
 web:
