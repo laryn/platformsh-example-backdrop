@@ -31,8 +31,8 @@ hooks:
         # Install Drush integration for Backdrop
         mkdir -p .drush/commands
         cd .drush/commands
-        wget https://github.com/backdrop-contrib/drush/releases/latest
-        unzip master.zip -d backdrop
+        wget https://github.com/backdrop-contrib/drush/archive/1.x-0.x.zip
+        unzip 1.x-0.x.zip -d backdrop
 
 # The size of the persistent disk of the application (in MB).
 disk: 2048
