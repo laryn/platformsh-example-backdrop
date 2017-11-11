@@ -34,6 +34,13 @@ hooks:
         wget https://github.com/backdrop-contrib/drush/archive/1.x-0.x.zip
         unzip 1.x-0.x.zip -d backdrop
 
+    deploy: |
+        # Import configuration on deploy.
+        cd /app/web
+        drush cc drush
+        drush bcim -y
+        drush cc all
+
 # The size of the persistent disk of the application (in MB).
 disk: 2048
 
