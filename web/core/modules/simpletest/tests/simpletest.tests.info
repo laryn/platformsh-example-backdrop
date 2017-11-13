@@ -1323,3 +1323,8 @@ name = File token tests
 description = Test the file tokens.
 group = Token
 file = token.test
+
+; Added by Backdrop CMS packaging script on 2017-09-15
+project = backdrop
+version = 1.8.0
+timestamp = 1505542963

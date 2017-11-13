@@ -9,3 +9,8 @@ name = Installer UI tests
 description = Tests installer browse functionality.
 group = Installer (module)
 file = installer.test
+
+; Added by Backdrop CMS packaging script on 2017-09-15
+project = backdrop
+version = 1.8.0
+timestamp = 1505542963

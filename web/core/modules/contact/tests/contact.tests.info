@@ -9,3 +9,8 @@ name = Personal contact form
 description = Tests personal contact form functionality.
 group = Contact
 file = contact.test
+
+; Added by Backdrop CMS packaging script on 2017-09-15
+project = backdrop
+version = 1.8.0
+timestamp = 1505542963
