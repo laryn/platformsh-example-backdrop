@@ -24,7 +24,7 @@ $settings['update_free_access'] = FALSE;
 // instead. In most cases it's best to leave this blank on Platform.sh. You
 // can configure a separate hash_salt in your settings.local.php file for
 // local development.
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = 'YaoBgLRmp-nfABKWdtMX27VnJE5qRzSM3h6qg3P0Yvs';
 
 $settings['404_fast_paths_exclude'] = '/\/(?:styles)|(?:system\/files)\//';
 $settings['404_fast_paths'] = '/\.(?:txt|png|gif|jpe?g|css|js|ico|swf|flv|cgi|bat|pl|dll|exe|asp)$/i';
