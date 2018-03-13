@@ -1,11 +1,11 @@
 # Backdrop project template for Platform.sh
 
 This project provides a starter kit for Backdrop projects hosted on [Platform.sh](http://platform.sh). It
-mirrors the latest tagged release of [Backrop CMS](https://github.com/backdrop/backdrop/releases/latest).
+mirrors the latest tagged release of [Backdrop CMS](https://github.com/backdrop/backdrop/releases/latest).
 
 ## Starting a new project
 
-To start a new Backrop project on Platform.sh, you have 2 options:
+To start a new Backdrop project on Platform.sh, you have 2 options:
 
 1. Create a new project through the Platform.sh user interface and select "start
    new project from a template".  Then select Backdrop as the template. That will
